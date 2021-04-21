@@ -13,5 +13,5 @@
 
 ## TODOS
 
-[] Fix base apparel coming soon
-[] Fix landing page navbar
+- Fix base apparel coming soon
+- Fix landing page navbar
