@@ -1,0 +1,214 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+h1 {
+    font-size: 4.75rem;
+    width: 60px;
+    text-transform: uppercase;
+    letter-spacing: 1rem;
+    margin-bottom: 25px;
+    line-height: 1.1;
+    color: hsl(0, 6%, 24%);
+}
+
+p {
+    text-indent: 3;
+}
+
+span {
+    font-weight: 300;
+    color: hsl(0, 36%, 70%);
+}
+
+/*---------------------------------------- Left Container -------------------------------------------------*/
+
+
+.left-container {
+    display: inline-block;
+    width: 55%;
+    height: 100vh;
+    background-image: url(images/bg-pattern-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    vertical-align: middle;
+}
+
+.logo {
+    display: inline-block;
+    margin-bottom: 150px;
+}
+
+.logo img {
+    width: 125%;
+}
+
+.left-content p {
+    font-size: 18px;
+    width: 480px;
+    line-height: 2;
+    color: hsl(0, 36%, 70%);
+    margin-bottom: 40px;
+}
+
+.left-content {
+    margin: 100px 0 0 200px;
+}
+
+/* Form */
+form {
+    max-width: 500px;
+}
+
+
+form input[type=email] {
+    font-family: 'Josefin Sans', sans-serif;
+    padding: 20px;
+    font-size: 18px;
+    border: 1px solid hsl(0, 36%, 80%);
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-right: none;
+    float: left;
+    width: 80%;
+    background: transparent;
+}
+
+form button {
+    float: left;
+    width: 20%;
+    padding: 18px;
+    background-image: linear-gradient(to bottom right, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+    color: white;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    box-shadow: -3px 18px 10px rgba(252, 233, 233, 80%);
+    border-radius: 50px;
+    position: relative;
+    right: 20px;
+    bottom: 2px;
+}
+
+input::placeholder {
+    color: hsl(0, 36%, 70%);
+    font-size: 16px;
+}
+
+input:focus {
+    color: #000;
+    outline: none;
+}
+
+input:invalid {
+    border: 1px solid red;
+}
+
+
+
+
+
+/*---------------------------  Right Container  -------------------------------------*/
+
+.right-container {
+    display: inline-block;
+    width: 45%;
+    float: right;
+    height: 100vh;
+    background-image: url(images/hero-desktop.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+
+/*---------------------------  Responsive Version  -------------------------------------*/
+
+@media only screen and (max-width: 375px) {
+    body {
+        width: 100vw;
+        max-width: 375px;
+    }
+
+    /* Left Container */
+
+    .left-container {
+        padding: 0 2rem;
+        height: 700px;
+        background-size: 10px;
+    }
+
+    .left-content {
+        width: 300px;
+        margin: 0 auto;
+    }
+
+    .content-text {
+        text-align: center;
+        position: relative;
+        top: 18rem;
+        height: 500px;
+    }
+
+    .logo {
+        background-color: white;
+        padding: 2rem 0;
+        margin-bottom: 0;
+    }
+
+    .logo img {
+        width: 120px;
+    }
+
+    .left-container h1 {
+        display: inline;
+        text-align: center;
+        font-size: 3rem;
+        letter-spacing: 1;
+    }
+
+    .left-container p {
+        margin: 1rem 0 2rem;
+        line-height: 1.5;
+        width: fit-content;
+    }
+
+    .left-container input,
+    .left-container .btn {
+        display: flex;
+
+    }
+
+    form input[type="email"] {
+        padding-right: 0;
+        width: 75%;
+    }
+
+    form button {
+        width: 25%;
+        padding: 20px 25px;
+        position: relative;
+        top: 1px;
+    }
+
+    form button img {
+        margin: 0 auto;
+    }
+
+    /* Right Content */
+    .right-container {
+        background-image: url(images/hero-mobile.jpg);
+        background-repeat: no-repeat;
+        float: none;
+        width: 100vw;
+        position: absolute;
+        top: 5.5rem;
+        left: 0;
+        height: 250px;
+    }
+}
